@@ -1,1 +1,0 @@
- # Script de evaluación del modelo
