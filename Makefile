@@ -8,11 +8,10 @@ format:
 train:
 	python train.py
 
-SHELL = cmd.exe
 
 eval:
 	echo "## Model Metrics" > report.md
-	type .\Results\metrics.txt >> report.md
+	cat ./Results/metrics.txt >> report.md
 	
 	echo '\n## Confusion Matrix Plot' >> report.md
 	echo ^<img alt="Confusion Matrix" src="./Results/model_results.png"^> >> report.md
